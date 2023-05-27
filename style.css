@@ -5,7 +5,7 @@
 	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
-body {	
+body {		
 	background-color: black;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -15,11 +15,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	
 	margin: 0;
 	padding: 0 10px; /* Add padding to the left and right */
 }
 
 .container {
+	width: min-content;
 	position: relative;
 	background-color: white;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -28,9 +30,7 @@ body {
 				0 22.3px 17.9px rgba(0, 0, 0, 0.072),
 				0 41.8px 33.4px rgba(0, 0, 0, 0.086),
 				0 100px 80px rgba(0, 0, 0, 0.12);
-	border-radius: 25px;
-	width: 425px;
-	height: 360px;
+	border-radius: 25px;	
 	animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	margin: 0 10px; /* Add margin to the left and right */
 }
@@ -38,9 +38,7 @@ body {
 .text {
 	color: black;
 	text-align: center;
-	margin-top: 20px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin: 20px 50px;	
 }  
 
 .text .header {
